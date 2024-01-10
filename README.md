@@ -1,1 +1,3 @@
-![Capa](https://github.com/Joao-VCorreia/saude-corporal/assets/155659371/f653e9af-35c9-4afc-b414-519ec6810929)
+![Capa](https://github.com/Joao-VCorreia/saude-corporal/assets/155659371/5f7f9ca6-31ab-49fc-a23f-c8b5ed113a65)
+# Descrição do Projeto
+Desenvolvi este projeto para demonstrar minhas competências em Python e capacidade na resolução de problemas, com foco destacado nas bibliotecas Pandas e Django. Desenvolvi uma aplicação web aplicando conceitos modernos de design e habilidades em HTML/CSS e fiz a utilizaçãoo do Power BI para criar visualizações a partir de dados tratados com Pandas, resultado em uma ferramenta poderosa para tomada de decisões. Estou ansioso para compartilhar e receber feedback sobre este trabalho.
