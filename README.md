@@ -2,7 +2,7 @@
 # Descrição do Projeto
 ---
 
-Desenvolvi este projeto para demonstrar minhas competências em Python e capacidade na resolução de problemas, com foco destacado nas bibliotecas Pandas e Django. Desenvolvi uma aplicação web aplicando conceitos modernos de design e habilidades em HTML/CSS e fiz a utilizaçãoo do Power BI para criar visualizações a partir de dados tratados com Pandas, resultado em uma ferramenta poderosa para tomada de decisões. Estou ansioso para compartilhar e receber feedback sobre este trabalho.
+Desenvolvi este projeto para demonstrar minhas competências em Python e capacidade na resolução de problemas, com foco nas bibliotecas Pandas e Django. Desenvolvi uma aplicação web aplicando conceitos modernos de design e habilidades em HTML/CSS e fiz utilização do Power BI para criar visualizações a partir de dados tratados com Pandas, resultando em uma ferramenta poderosa para tomada de decisões. Estou ansioso para compartilhar e receber feedback sobre este trabalho.
 
 ## Inicialização
 ---
