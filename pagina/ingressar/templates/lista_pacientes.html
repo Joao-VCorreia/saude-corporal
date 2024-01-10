@@ -1,0 +1,83 @@
+<!-- lista_pacientes.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pacientes</title>
+    <link rel="stylesheet" href="{% static 'css/lista.css' %}">
+</head>
+<body>
+
+    <div class="campos">
+        <a href="{% url 'cadastro' %}"><button id="retornar">Voltar para Cadastro</button></a>
+
+        <form id="pesquisa-form" method="get" action="{% url 'pesquisar_pacientes' %}">
+            <input value="{{search_term}}" type="text" id="pesquisa" name="pesquisa" placeholder="Pesquisar por Nome">
+            <a id="search_link"><button type="submit" id="search_button"></button></a>
+        </form>
+    </div>
+    
+    <div class="tabelas">
+        <h1>Lista de Pacientes</h1>
+        {% if results %}
+            <table id="tabela-registros">
+                <tr id="cabecalho">
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Nascimento</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>Pressão Arterial</th>
+                    <th>Glicemia</th>
+                    <th>Frequência Cardíaca</th>
+                    <th>Sexo</th>
+                </tr>
+                {% for cont in results %}
+                    <tr>
+                        <td>{{ cont.NOME }}</td>
+                        <td>{{ cont.SOBRENOME }}</td>
+                        <td>{{ cont.NASCIMENTO }}</td>
+                        <td>{{ cont.ALTURA }}</td>
+                        <td>{{ cont.PESO }}</td>
+                        <td>{{ cont.PRESSAO_ARTERIAL }}</td>
+                        <td>{{ cont.GLICEMIA }}</td>
+                        <td>{{ cont.FREQUENCIA_CARDIACA }}</td>
+                        <td>{{ cont.SEXO }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <table id="tabela-registros">
+                <tr>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Nascimento</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>Pressão Arterial</th>
+                    <th>Glicemia</th>
+                    <th>Frequência Cardíaca</th>
+                    <th>Sexo</th>
+                </tr>
+                {% for paciente in pacientes %}
+                    <tr>
+                        <td>{{ paciente.nome }}</td>
+                        <td>{{ paciente.sobrenome }}</td>
+                        <td>{{ paciente.nascimento }}</td>
+                        <td>{{ paciente.altura }}</td>
+                        <td>{{ paciente.peso }}</td>
+                        <td>{{ paciente.pressao_arterial }}</td>
+                        <td>{{ paciente.glicemia }}</td>
+                        <td>{{ paciente.frequencia_cardiaca }}</td>
+                        <td>{{ paciente.get_sexo_display }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% endif %}
+    </div>
+   
+</body>
+
+</html>

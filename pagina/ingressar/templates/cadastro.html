@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Paciente</title>
+    <link rel="stylesheet" href="{% static 'css/cadastro.css' %}">
+</head>
+<body>
+
+    <form method="post" action="{% url 'cadastrar_paciente' %}">
+        {% csrf_token %}
+        <div id="incrementar-dados">
+            <h1>Cadastro de Paciente</h1>
+
+            <div><label for="nome"></label>
+            <input type="text" name="nome" placeholder="Nome" required></div>
+            <span class="separador"></span>
+            <div><label for="sobrenome"></label>
+            <input type="text" name="sobrenome" placeholder="Sobrenome" required></div>
+
+            <div><label for="nascimento"></label>
+            <input type="date" name="nascimento" required></div>
+            <span class="separador"></span>
+            <div><label for="altura"></label>
+            <input type="text" name="altura" pattern="\d+(\.\d+)?" placeholder="Altura (m)" required></div>
+            
+            <div><label for="peso"></label>
+            <input type="number" name="peso" placeholder="Peso (kg)" required></div>
+            <span class="separador"></span>
+            <div><label for="pressao_arterial"></label>
+            <input type="text" name="pressao_arterial" placeholder="Pressão Arterial" required></div>
+
+            <div><label for="glicemia"></label>
+            <input type="number" name="glicemia" placeholder="Glicemia" required></div>
+            <span class="separador"></span>
+            <div><label for="frequencia_cardiaca"></label>
+            <input type="number" name="frequencia_cardiaca" id="frequencia_cardiaca" placeholder="F. Cardiaca"></div>
+
+            <div><label for="sexo"></label>
+            <select name="sexo"  required>
+                <option value="" disabled selected>Sexo</option>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+            </select></div>
+        </div>
+        
+        <button type="submit" value="cadastrar">Cadastrar</button>
+        <button type="submit" value="listar"><a href="{% url 'listar_pacientes' %}">Lista de Pacientes</a></button>
+    </form>
+
+
+</body>
+</html>
