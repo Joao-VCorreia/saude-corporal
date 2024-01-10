@@ -1,0 +1,1 @@
+Instale todas as dependências disponíveis no arquivo requeriments.txt na pasta raiz
