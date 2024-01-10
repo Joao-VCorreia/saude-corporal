@@ -32,7 +32,7 @@ Ao entrar no site, você deve se deparar com a seguinte tela
 
 <img src="https://github.com/Joao-VCorreia/saude-corporal/assets/155659371/e5a3a623-d739-4bc3-9ae2-3d7e08e4c5ca" width="60%">
 
-O site usa autenticação de usuário, então você só conseguirá acessar o cadastro e lista de pacientes através das credencias corretas, prossiga com o Nome de Usuário: **FuncionarioA** e Senha: **123@FuncA**.
+O site usa autenticação de usuário, então você só conseguirá acessar o cadastro e lista de pacientes através das credencias corretas, prossiga com o Nome de Usuário: `FuncionarioA` e Senha: `123@FuncA`.
 
 Com essas credenciais você poderá utilizar a ferrante web a vontade. Deste cadastrar novos usuários, visualizar os 15 ultimos clientes ou pesquisar por um especifico.
 
@@ -43,7 +43,7 @@ Com essas credenciais você poderá utilizar a ferrante web a vontade. Deste cad
 ## Tratamento dos dados
 ---
 
-Para alimentar nosso relatório é muito simples, você só precisa executar o arquivo `to_bi.ipynb` disponível na pasta **scripts**.
+Para alimentar nosso relatório é muito simples, você só precisa executar o arquivo `to_bi.ipynb` disponível na pasta "scripts".
 
 ![Analise](https://github.com/Joao-VCorreia/saude-corporal/assets/155659371/a9388713-b3b8-4af9-856c-0117abfeca65)
 
@@ -54,7 +54,7 @@ Ele é responsável por calcular a Idade, IMC, classificação do IMC que o clie
 ## Relatório
 ---
 
-Com o banco de dados atualizado você só precisa abrir o relatório **DASHBOARD** em `app/dash`. 
+Com o banco de dados atualizado você só precisa abrir o relatório `DASHBOARD` em "app/dash". 
 
 Neste relatório é possivel observar métricas como o IMC médio de todos os clientes, qual a porcentagem de cada grupo presente, o peso máximo, médio e minimo registrado além de levantamentos usando a Idade e Pressão dos pacientes.
 
@@ -68,5 +68,5 @@ Você ainda pode aplicar o filtro 'Masculino' ou 'Feminino' rapidamente nos filt
 ---
 Para alimentar o relatório e lista de pacientes o banco de dados usado foi gerado randomicamente, isto significa que a simulação não captura com precisão as características de dados reais, resultando em dados que podem ser distorcidos ou não apresentar tendências.
 
-No arquivo **forcar-dados-novos** na pasta `scripts`, você pode fazer modificações a fim de obter dados mais previsíveis se assim preferir.
+No arquivo `forcar-dados-novos` na pasta "scripts", você pode fazer modificações a fim de obter dados mais previsíveis se assim preferir.
 ![GeracaoDeDados](https://github.com/Joao-VCorreia/saude-corporal/assets/155659371/6d96e104-fe14-4775-af61-831e567d5f28)
