@@ -1,20 +1,20 @@
 ![Capa](https://github.com/Joao-VCorreia/saude-corporal/assets/155659371/5f7f9ca6-31ab-49fc-a23f-c8b5ed113a65)
 # Descrição do Projeto
 
-Projeto desenvolvido com Python para acompanhamento do status de saúde de pacientes, como principal ferramenta temos Django e Power BI. 
+Projeto desenvolvido em Python para acompanhamento do status de saúde de pacientes. As principais ferramentas utilizadas são Django e Power BI.
 
-Na primeira etapa temos a coleta de informações do paciente e inclusão no banco de dados gerido com a biblioteca Django, foi escolhido um visual moderno e limpo para dar foco as informações. Após isso os dados são tratados com Pandas e visualizado através de uma dashboard no Power BI.
+Na primeira etapa, ocorre a coleta de informações dos pacientes e a inclusão no banco de dados gerido com a biblioteca Django. Foi escolhido um visual moderno e limpo para dar foco às informações. Após isso, os dados são tratados com Pandas e visualizados através de um dashboard no Power BI.
 
 <br/>
 
 ## Inicialização
 
-Ao iniciar o projeto entre no ambiente virtual `myworld` pelo caminho abaixo:
+Ao iniciar o projeto entre no ambiente virtual `myworld` seguindo o caminho:
 ```bash
-.\myworld\Scripts\activate
+myword\Scripts\activate
 ```
 
-Após isto **instale todas as dependências** disponíveis no arquivo `requeriments.txt`
+Verifique as dependências no arquivo `requeriments.txt`, se necessário a instalação execute o comando abaixo no terminal: 
 ```bash
 pip install -r requirements.txt
 ```
@@ -27,7 +27,7 @@ python manage.py runserver
 ```
 Agora você terá o caminho local para abrir a aplicação web
 
-<br/>
+<br/>cd
 
 ## Cadastrando Clientes
 
