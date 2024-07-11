@@ -79,7 +79,7 @@ def pesquisar_pacientes(request):
             with connection.cursor() as cursor:
                 cursor.execute(
                     '''
-                    SELECT * FROM ingressar_paciente
+                    SELECT * FROM Pacientes
                     WHERE nome LIKE %s
                     ORDER BY nome asc
                     LIMIT 15;
