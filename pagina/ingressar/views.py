@@ -84,7 +84,7 @@ def pesquisar_pacientes(request):
                     ORDER BY nome asc
                     LIMIT 15;
                     ''',
-                    ['' + search_term + '%']
+                    [search_term + '%']
                 )
                 columns = [col[0] for col in cursor.description]
                 results = [dict(zip(columns, row)) for row in cursor.fetchall()]
