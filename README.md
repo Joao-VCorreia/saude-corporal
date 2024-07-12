@@ -27,7 +27,7 @@ python manage.py runserver
 ```
 Agora você terá o caminho local para abrir a aplicação web
 
-<br/>cd
+<br/>
 
 ## Cadastrando Clientes
 
