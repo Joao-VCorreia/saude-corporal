@@ -6,9 +6,13 @@ Projeto desenvolvido em Python para acompanhamento do status de saúde de pacien
 Na primeira etapa, ocorre a coleta de informações dos pacientes e a inclusão no banco de dados através de um site gerido com a biblioteca Django. Foi escolhido um visual moderno e limpo para dar foco às informações. Após isso, os dados são tratados com Pandas e visualizados através de um dashboard no Power BI.
 
 **Atenção: Este projeto está sendo atualizado. Algumas funcionalidades podem estar temporariamente indisponíveis.**
+
 <br/>
 
 ## Configuração do Ambiente e Inicialização
+
+**Este projeto foi desenvolvido utilizando Python 3.12. É recomendado usar a mesma versão ou superior para evitar problemas de compatibilidade.**
+No mais, siga o passo a passo para executar o projeto com sucesso.
 
 1. Clone o repositório:
 ```bash
@@ -35,7 +39,7 @@ pip install -r requirements.txt
 python mysite/manage.py runserver
 ```
 
-**Pronto! Agora você terá o caminho local para abrir a aplicação web**
+**Pronto! Agora você terá o caminho local para abrir a aplicação web.**
 
 <br/>
 
