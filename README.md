@@ -50,6 +50,7 @@ Ao entrar no site, você deve se deparar com a seguinte tela
 <img src="https://github.com/Joao-VCorreia/saude-corporal/assets/155659371/e5a3a623-d739-4bc3-9ae2-3d7e08e4c5ca" width="60%">
 
 O site usa autenticação de usuário, então você só conseguirá acessar o cadastro e lista de pacientes através das credencias corretas, prossiga com o Nome de Usuário: `FuncionarioA` e Senha: `123@FuncA`.
+<!-- FuncionarioA - key@FuncA -->
 
 Com essas credenciais você poderá utilizar a ferrante web a vontade. Deste cadastrar novos usuários, visualizar os 15 ultimos clientes ou pesquisar por um especifico.
 

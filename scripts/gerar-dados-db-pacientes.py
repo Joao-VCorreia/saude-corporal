@@ -27,9 +27,8 @@ lista_sexo_aleatorio = np.random.choice(['M', 'F'], size=df['SEXO'].isnull().sum
 df.loc[df['SEXO'].isnull(), 'SEXO'] = lista_sexo_aleatorio  
 
 #Define data de nascimento e idade
-df['NASCIMENTO'] = None
-df.loc[df['NASCIMENTO'].isnull(), 'NASCIMENTO'] = np.random.choice(pd.date_range(start='1910-01-01', end='2019-12-31'), size=len(df))
-df['NASCIMENTO'] = pd.to_datetime(df['NASCIMENTO'])
+df['NASCIMENTO'] = np.random.choice(pd.date_range(start='1910-01-01', end='2019-12-31'), size=len(df))
+df['NASCIMENTO'] = pd.to_datetime(df['NASCIMENTO']).dt.date
 
 df['IDADE'] = (pd.Timestamp.now() - pd.to_datetime(df['NASCIMENTO'])).dt.days // 365
 
@@ -42,12 +41,15 @@ df.loc[df['SEXO'] == 'F', 'ALTURA'] -= np.random.randint(1, 8)
 df.loc[df['SEXO'] == 'M', 'ALTURA'] += np.random.randint(1, 8)
 
 #define o peso com influencia da idade e sexo
-df['PESO'] = np.round(np.random.uniform(25.0, 150, size=len(df)), decimals=2)
+df['PESO'] = np.random.uniform(25.0, 150, size=len(df))
+
 df.loc[df['IDADE'] <= 18, 'PESO'] -= (8 * (1 - (df['IDADE'] / 18) ** 2 )).round(decimals=2)
 df.loc[df['IDADE'] >= 60, 'PESO'] -= (15 * ((df['IDADE'] - 60) / (df['IDADE'].max() - 60)) ** 2).round(decimals=2)
 
 df.loc[df['SEXO'] == 'F', 'PESO'] -= (df['PESO'] * 0.05).round(decimals=2)
 df.loc[df['SEXO'] == 'M', 'PESO'] += (df['PESO'] * 0.05).round(decimals=2)
+
+df['PESO'] = np.round(df['PESO'], decimals=2)
 
 # define pressao arterial
 df['PRESSAO_SISTOLICA'] = 10 * np.random.randint(5, 23, size=len(df))
